@@ -31,7 +31,7 @@ try:
 except:
     try:
         if sys.platform == 'win32':
-            libsvm = CDLL(path.join(dirname, r'..\..\windows\libsvm.dll'))
+            libsvm = CDLL(path.join(dirname, r'..\..\..\Library\lib\libsvm.dll'))
         else:
             libsvm = CDLL(path.join(dirname, '../../libsvm.so.2'))
     except:
